@@ -18,6 +18,7 @@ import "../styles/globals.css";
 
 function MyApp(props: AppProps) {
   const { Component, pageProps, err } = props;
+
   return (
     <AppProviders {...props}>
       <DefaultSeo {...seoConfig.defaultNextSeo} />
@@ -63,7 +64,7 @@ export default withTRPC<AppRouter>({
              * Retry `useQuery()` calls depending on this function
              */
             retry(failureCount, _err) {
-              const err = _err as never as Maybe<TRPCClientErrorLike<AppRouter>>;
+              const err = (_err as never) as Maybe<TRPCClientErrorLike<AppRouter>>;
               const code = err?.data?.code;
               if (code === "BAD_REQUEST" || code === "FORBIDDEN" || code === "UNAUTHORIZED") {
                 // if input data is wrong or you're not authorized there's no point retrying a query
