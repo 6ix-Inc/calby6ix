@@ -13,8 +13,8 @@ import { withTRPC } from "@trpc/next";
 import type { TRPCClientErrorLike } from "@trpc/react";
 import { Maybe } from "@trpc/server";
 
-import "../styles/fonts.css";
-import "../styles/globals.css";
+import "../styles/css/fonts.css";
+import "../styles/css/globals.css";
 
 function MyApp(props: AppProps) {
   const { Component, pageProps, err } = props;
@@ -64,7 +64,7 @@ export default withTRPC<AppRouter>({
              * Retry `useQuery()` calls depending on this function
              */
             retry(failureCount, _err) {
-              const err = (_err as never) as Maybe<TRPCClientErrorLike<AppRouter>>;
+              const err = _err as never as Maybe<TRPCClientErrorLike<AppRouter>>;
               const code = err?.data?.code;
               if (code === "BAD_REQUEST" || code === "FORBIDDEN" || code === "UNAUTHORIZED") {
                 // if input data is wrong or you're not authorized there's no point retrying a query
