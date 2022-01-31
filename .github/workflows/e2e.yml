@@ -54,11 +54,10 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 2
 
-      - name: Use Node.js 16.x
+      - name: Use Node ${{ matrix.node }}
         uses: actions/setup-node@v1
         with:
-		      node-version: 16.x
-          version: 16.x
+          node-version: ${{ matrix.node }}
 
       - name: Install deps
         uses: bahmutov/npm-install@v1
