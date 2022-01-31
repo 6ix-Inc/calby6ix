@@ -54,7 +54,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 2
 
-      - name: Use Node ${{ matrix.node }}
+      - name: Use Node.js 16.x
         uses: actions/setup-node@v1
         with:
           version: 16.x
