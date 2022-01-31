@@ -6,7 +6,6 @@ on:
 jobs:
   test:
     timeout-minutes: 10
-    name: ${{ matrix.node }} and ${{ matrix.os }}
     env:
       DATABASE_URL: postgresql://postgres:@localhost:5432/calendso
       BASE_URL: http://localhost:3000
@@ -44,7 +43,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node: [16.x]
+        node: ['16.x']
         os: [ubuntu-latest]
 
     steps:
