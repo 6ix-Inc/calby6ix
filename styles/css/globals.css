@@ -773,7 +773,8 @@ nav a:hover span {
 .bg-blue-100,
 .bg-red-100,
 .bg-yellow-50,
-.bg-secondary-100 {
+.bg-secondary-100,
+.bg-green-100 {
   background-color: #575757 !important;
 }
 
@@ -887,5 +888,11 @@ button.leading-tight {
 }
 
 .loader-inner {
+  display: none !important;
+}
+
+a[href*="https://cal.com/slack"],
+a[href*="https://cal.com/roadmap"],
+a[href*="utm_medium=powered-by-button"] {
   display: none !important;
 }
