@@ -1,0 +1,7 @@
+In this changelog we mention the changes which we done in this repo
+
+1. created new css files in css folder inside style folder,
+2. update path of css files in _app.tsx file inside pages
+3. did updates in github workflow actions for latest node version
+4. Update username in shell.tsx
+5. commented signup text on login page
