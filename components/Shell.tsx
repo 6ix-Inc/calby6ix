@@ -194,7 +194,7 @@ export default function Shell(props: {
     <>
       <CustomBranding val={user?.brandColor} />
       <HeadSeo
-        title={pageTitle ?? "Cal.com"}
+        title={pageTitle ?? "Cal.6ix.com"}
         description={props.subtitle ? props.subtitle?.toString() : ""}
         nextSeoProps={{
           nofollow: true,

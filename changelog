@@ -5,3 +5,5 @@ In this changelog we mention the changes which we done in this repo
 3. did updates in github workflow actions for latest node version
 4. Update username in shell.tsx
 5. commented signup text on login page
+6. Replace cal.com on all places with cal.6ix.com
+7. Hide all Link which have cal.com in the HREF
