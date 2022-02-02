@@ -891,6 +891,7 @@ button.leading-tight {
   display: none !important;
 }
 
+[href*="cal.com"],
 a[href*="https://cal.com/slack"],
 a[href*="https://cal.com/roadmap"],
 a[href*="utm_medium=powered-by-button"] {

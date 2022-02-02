@@ -259,7 +259,7 @@ const BookingPage = (props: BookingPageProps) => {
                 eventTypeTitle: props.eventType.title,
                 profileName: props.profile.name,
               })}{" "}
-          | Cal.com
+          | Cal.6ix.com
         </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
