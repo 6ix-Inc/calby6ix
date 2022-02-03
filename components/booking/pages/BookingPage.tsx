@@ -261,7 +261,7 @@ const BookingPage = (props: BookingPageProps) => {
               })}{" "}
           | Cal.6ix.com
         </title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="https://6ix.com/wp-content/uploads/2021/02/6ix-logo.png" />
       </Head>
       <CustomBranding val={props.profile.brandColor} />
       <main className="max-w-3xl mx-auto my-0 rounded-sm sm:my-24 sm:border sm:dark:border-gray-600">
