@@ -306,7 +306,7 @@ const EventTypesPage = () => {
     <div>
       <Head>
         <title>Home | Cal.com</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="https://6ix.com/wp-content/uploads/2021/02/6ix-logo.png" />
       </Head>
       <Shell
         heading={t("event_types_page_title")}

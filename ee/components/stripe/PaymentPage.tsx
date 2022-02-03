@@ -38,7 +38,7 @@ const PaymentPage: FC<PaymentPageProps> = (props) => {
         <title>
           {t("payment")} | {eventName} | Cal.com
         </title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="https://6ix.com/wp-content/uploads/2021/02/6ix-logo.png" />
       </Head>
       <main className="max-w-3xl py-24 mx-auto">
         <div className="fixed inset-0 z-50 overflow-y-auto">
