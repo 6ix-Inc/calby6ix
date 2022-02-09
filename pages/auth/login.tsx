@@ -49,9 +49,11 @@ export default function Login({
   const callbackUrl = typeof router.query?.callbackUrl === "string" ? router.query.callbackUrl : "/";
 
   useEffect(() => {
-    samlRef?.current?.click();
-    setLoader(false);
-  }, []);
+    setTimeout(() => {
+      samlRef?.current?.click();
+    }, 1000);
+    setLoader(true);
+  }, [isSAMLLoginEnabled]);
 
   async function handleSubmit(e: React.SyntheticEvent) {
     e.preventDefault();
