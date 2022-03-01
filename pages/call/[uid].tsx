@@ -119,8 +119,8 @@ export default function JoinCall(props: JoinCallPageProps) {
         <Link href="/">
           <img
             className="fixed z-10 hidden w-auto h-5 sm:inline-block"
-            src="https://cal.com/logo-white.svg"
-            alt="Cal.com Logo"
+            src="https://149474761.v2.pressablecdn.com/wp-content/themes/six-usm/assets/img/6ix-logo-square.png"
+            alt="Cal.6ix.com Logo"
             style={{
               top: 46,
               left: 24,

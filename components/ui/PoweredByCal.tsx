@@ -11,13 +11,13 @@ const PoweredByCal = () => {
           {t("powered_by")}{" "}
           <img
             className="dark:hidden w-auto inline h-[10px] relative -mt-px"
-            src="https://cal.com/logo.svg"
-            alt="Cal.com Logo"
+            src="https://149474761.v2.pressablecdn.com/wp-content/themes/six-usm/assets/img/6ix-logo-square.png"
+            alt="Cal.6ix.com Logo"
           />
           <img
             className="hidden dark:inline w-auto h-[10px] relativ -mt-px"
-            src="https://cal.com/logo-white.svg"
-            alt="Cal.com Logo"
+            src="https://149474761.v2.pressablecdn.com/wp-content/themes/six-usm/assets/img/6ix-logo-square.png"
+            alt="Cal.6ix.com Logo"
           />
         </a>
       </Link>
