@@ -305,7 +305,7 @@ const EventTypesPage = () => {
   return (
     <div>
       <Head>
-        <title>Home | Cal.com</title>
+        <title>Home | Cal.6ix.com</title>
         <link rel="icon" type="image/png" href="https://6ix.com/wp-content/uploads/2021/02/6ix-logo.png" />
       </Head>
       <Shell

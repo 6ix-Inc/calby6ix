@@ -32,7 +32,7 @@ export default class OrganizerRequestEmail extends OrganizerScheduledEmail {
     }
 
     return {
-      from: `Cal.com <${this.getMailerOptions().from}>`,
+      from: `Cal.6ix.com <${this.getMailerOptions().from}>`,
       to: toAddresses.join(","),
       subject: `${this.calEvent.language("event_awaiting_approval_subject", {
         eventType: this.calEvent.type,
