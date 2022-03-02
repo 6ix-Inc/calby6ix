@@ -403,7 +403,7 @@ const EventTypePage = (props: inferSSRProps<typeof getServerSideProps>) => {
                             fillRule="evenodd"></path>
                         </g>
                       </svg>
-                      <span className="ml-2 text-sm">Daily.co Video</span>
+                      <span className="ml-2 text-sm">6ix Video</span>
                     </div>
                   )}
                   {location.type === LocationType.Zoom && (
@@ -1448,7 +1448,7 @@ export const getServerSideProps = async (context: GetServerSidePropsContext) => 
     locationOptions.push({ value: LocationType.GoogleMeet, label: "Google Meet" });
   }
   if (hasIntegration(integrations, "daily_video")) {
-    locationOptions.push({ value: LocationType.Daily, label: "Daily.co Video" });
+    locationOptions.push({ value: LocationType.Daily, label: "6ix Video" });
   }
   const currency =
     (credentials.find((integration) => integration.type === "stripe_payment")?.key as unknown as StripeData)

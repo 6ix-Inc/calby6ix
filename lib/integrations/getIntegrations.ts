@@ -57,7 +57,7 @@ export const ALL_INTEGRATIONS = [
   {
     installed: !!process.env.DAILY_API_KEY,
     type: "daily_video",
-    title: "Daily.co Video",
+    title: "6ix Video",
     imageSrc: "integrations/daily.svg",
     description: "Video Conferencing",
     variant: "conferencing",
