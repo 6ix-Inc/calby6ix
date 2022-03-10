@@ -111,9 +111,9 @@ export default function JoinCall(props: JoinCallPageProps) {
       <HeadSeo title="Video Conference" description="Join the video call" />
       <Head>
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://cal.com/video-og-image.png" />
+        <meta property="og:image" content="https://cal.6ix.com/video-og-image.png" />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:image" content="https://cal.com/video-og-image.png" />
+        <meta property="twitter:image" content="https://cal.6ix.com/video-og-image.png" />
       </Head>
       <div style={{ zIndex: 2, position: "relative" }}>
         <Link href="/">
