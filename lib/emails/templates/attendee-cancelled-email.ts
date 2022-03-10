@@ -69,20 +69,20 @@ ${this.getAdditionalNotes()}
     <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
     ${emailHead(headerContent)}
 
-    <body style="word-spacing:normal;background-color:#F5F5F5;">
-      <div style="background-color:#F5F5F5;">
+    <body style="word-spacing:normal;background-color:#000000;">
+      <div style="background-color:#000000;">
         ${emailSchedulingBodyHeader("xCircle")}
         ${emailScheduledBodyHeaderContent(
           this.calEvent.language("event_request_cancelled"),
           this.calEvent.language("emailed_you_and_any_other_attendees")
         )}
         ${emailSchedulingBodyDivider()}
-        <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" bgcolor="#FFFFFF" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-        <div style="background:#FFFFFF;background-color:#FFFFFF;margin:0px auto;max-width:600px;">
-          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;background-color:#FFFFFF;width:100%;">
+        <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" bgcolor="#000000" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <div style="background:#000000;background-color:#000000;margin:0px auto;max-width:600px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#000000;background-color:#000000;width:100%;">
             <tbody>
               <tr>
-                <td style="border-left:1px solid #E1E1E1;border-right:1px solid #E1E1E1;direction:ltr;font-size:0px;padding:0px;text-align:center;">
+                <td style="border-left:1px solid #373737;border-right:1px solid #373737;direction:ltr;font-size:0px;padding:0px;text-align:center;">
                   <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:598px;" ><![endif]-->
                   <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                     <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
@@ -107,12 +107,12 @@ ${this.getAdditionalNotes()}
             </tbody>
           </table>
         </div>
-        <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" bgcolor="#FFFFFF" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-        <div style="background:#FFFFFF;background-color:#FFFFFF;margin:0px auto;max-width:600px;">
-          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFFFFF;background-color:#FFFFFF;width:100%;">
+        <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" bgcolor="#000000" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+        <div style="background:#000000;background-color:#000000;margin:0px auto;max-width:600px;">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#000000;background-color:#000000;width:100%;">
             <tbody>
               <tr>
-                <td style="border-bottom:1px solid #E1E1E1;border-left:1px solid #E1E1E1;border-right:1px solid #E1E1E1;direction:ltr;font-size:0px;padding:0px;text-align:center;">
+                <td style="border-bottom:1px solid #373737;border-left:1px solid #373737;border-right:1px solid #373737;direction:ltr;font-size:0px;padding:0px;text-align:center;">
                   <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr></tr></table><![endif]-->
                 </td>
               </tr>
