@@ -2,27 +2,26 @@
 
 # .env file
 .env
+!packages/prisma/.env
 
 # dependencies
-/node_modules
-/.pnp
+node_modules
+.pnp
 .pnp.js
-/.yarn
 
 # testing
-/coverage
-.nyc_output
-playwright/videos
-playwright/screenshots
-playwright/artifacts
-playwright/results
+coverage
+/test-results/
+**/playwright/videos
+**/playwright/screenshots
+**/playwright/artifacts
+**/playwright/results
+**/playwright/reports/*
 
 # next.js
-/.next/
-/out/
-
-# production
-/build
+.next/
+out/
+build
 
 # misc
 .DS_Store
@@ -32,6 +31,7 @@ playwright/results
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
 
 # local env files
 .env.local
@@ -39,6 +39,8 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 .env.*
+!.env.example
+!.env.appStore.example
 
 # vercel
 .vercel
@@ -57,5 +59,40 @@ yarn-error.log*
 # Local History for Visual Studio Code
 .history/
 
-# Typescript 
+# Typescript
 tsconfig.tsbuildinfo
+
+# turbo
+.turbo
+
+# Prisma-Zod
+packages/prisma/zod/*.ts
+
+# Builds
+dist
+
+# Linting
+lint-results
+
+#Storybook
+apps/storybook/build-storybook.log
+
+# Snaplet
+.snaplet/snapshots
+.snaplet/structure.d.ts
+
+# Submodules
+.gitmodules
+apps/api
+apps/website
+apps/console
+apps/auth
+
+# Yarn Modern
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

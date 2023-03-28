@@ -1,30 +1,17 @@
 name: Check types
 on:
-  pull_request:
-    branches:
-      - main
+  workflow_call:
+env:
+  NODE_OPTIONS: "--max-old-space-size=8192"
 jobs:
-  types:
-    name: Check types
-
-    strategy:
-      matrix:
-        node: [16.x]
-        os: [ubuntu-latest]
-    runs-on: ${{ matrix.os }}
-
+  check-types:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/dangerous-git-checkout
+      - uses: ./.github/actions/yarn-install
 
-      - name: Use Node ${{ matrix.node }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: 16.x
+      - name: Show info
+        run: node -e "console.log(require('v8').getHeapStatistics())"
 
-      - name: Install deps
-        uses: bahmutov/npm-install@v1
-
-      - run: yarn check-changed-files
+      - run: yarn type-check
